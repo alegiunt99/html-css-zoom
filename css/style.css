@@ -12,6 +12,12 @@ body{
 
 a{
     text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    background-color: rgb(172, 172, 172);
+    padding: 2px 2px;
 }
 
 .right-little-but a{
@@ -24,7 +30,11 @@ a{
     top: 5px;
     border-radius: 3px;
     text-decoration: none;
+}
 
+.right-little-but a:hover,
+.expanding-button a:hover{
+    background-color: rgb(172, 172, 172);
 }
 
 .expanding-button a{
@@ -68,6 +78,11 @@ a{
     padding: 2px;
 }
 
+.photos span i:hover{
+    color: red;
+    cursor: pointer;
+}
+
 footer{
     min-height: 11vh;
     flex-grow: 1;
@@ -92,12 +107,12 @@ footer > *{
     flex-direction: column;
     align-items: center;
     color: white;
-    font-size: 13px;
+    font-size: 10px;
 }
 
 .audio-video a i{
  color: white;
- font-size: 1.4rem;
+ font-size: 1.1rem;
  margin-bottom: 3px;
 }
 
@@ -105,4 +120,62 @@ footer > *{
     color: white;
     font-size: 14px;
     margin: 0 22px;
+}
+
+/* Parte options centrale */
+
+.options ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.options li{
+    margin-right: 9px;
+}
+
+.options a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 10px;
+}
+
+.options a i{
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 3px;
+}
+
+.options .fa-chevron-up{
+    font-size: 10px;
+    margin-right: 6px;
+}
+
+.options .fa-share-square{
+    color: rgb(0, 233, 0);
+}
+
+
+/* exit call */
+
+.exit{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 10px; 
+    padding-right: 10px;
+}
+
+.exit a{
+    color: red;
+    background-color: gray;
+}
+
+.exit a:hover{
+    background-color: red;
+    color: white;
+    padding: 3px;
 }
